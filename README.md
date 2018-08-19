@@ -1,1 +1,1 @@
-# rada
+# rade
