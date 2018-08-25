@@ -103,10 +103,6 @@
 </mt-tabbar>
 <script>
 export default {
-  import { Tabbar, TabItem } from 'mint-ui';
-  Vue.component(Tabbar.name, Tabbar);
-  Vue.component(TabItem.name, TabItem);
-  name: 'HelloWorld',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
