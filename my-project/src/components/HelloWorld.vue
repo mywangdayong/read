@@ -3,15 +3,13 @@
     <navtab></navtab>
     <banner></banner>
     <h2>新书速递</h2>
-    <carddiv></carddiv>
   </div>
 </template>
 <script>
   import navtab from './nav.vue'
   import banner from './banner.vue'
-  import carddiv from './carddiv.vue'
   export default {
-    components:{navtab,banner,carddiv},
+    components:{navtab,banner},
     data() {
       return {
         activeIndex: '1',
