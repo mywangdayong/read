@@ -3,13 +3,17 @@
     <navtab></navtab>
     <banner></banner>
     <h2>新书速递</h2>
+    <card></card>
+    <foot></foot>
   </div>
 </template>
 <script>
   import navtab from './nav.vue'
   import banner from './banner.vue'
+  import card from './card.vue'
+  import foot from './foot.vue'
   export default {
-    components:{navtab,banner},
+    components:{navtab,banner,card,foot},
     data() {
       return {
         activeIndex: '1',
@@ -23,21 +27,6 @@
     }
   }
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-h1, h2 {
-  font-weight: normal;text-align:center;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li{ 
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+<style type="text/css">
+  
 </style>

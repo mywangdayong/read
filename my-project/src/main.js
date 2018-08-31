@@ -6,7 +6,9 @@ import router from './router'
 import Mint from 'mint-ui';
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
+import Vuex from 'vuex';
 
+Vue.use(Vuex);
 Vue.use(ElementUI);
 Vue.use(Mint);
 import 'mint-ui/lib/style.css'; 
