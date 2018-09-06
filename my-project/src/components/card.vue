@@ -53,6 +53,18 @@ export default {
     return {
       currentDate: new Date()
     };
+  },
+  creater(){
+    this.$axios.get(url)
+    .then(res => {
+
+    })
+    .catch(error => {
+      console.log(error)
+    })
+
+    
   }
 }
+
 </script>

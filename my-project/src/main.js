@@ -7,7 +7,10 @@ import Mint from 'mint-ui';
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 import Vuex from 'vuex';
+import 	Axios from 'axios';
 
+
+Vue.prototype.$axios = Axios; 
 Vue.use(Vuex);
 Vue.use(ElementUI);
 Vue.use(Mint);
