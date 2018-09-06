@@ -4,7 +4,7 @@
 	    <el-card :body-style="{ padding: '0px' }">
 	      <img src="../assets/hamburger.png" class="image">
 	      <div style="padding: 14px;">
-	        <span>好吃的汉堡</span>
+	        <span>{{mes}}</span>
 	        <div class="bottom clearfix">
 	          <time class="time">{{ currentDate }}</time>
 	          <el-button type="text" class="button">查看详情</el-button>
@@ -51,20 +51,21 @@
 export default {
   data() {
     return {
-      currentDate: new Date()
+      currentDate: new Date(),
+      mes: 2
     };
   },
-  creater(){
-    this.$axios.get(url)
+  created(){
+    this.$axios.get("http://www.wwtliu.com/sxtstu/blueberrypai/getChengpinDetails.php")
     .then(res => {
-
+      console.log(res);
+      this.mes = res.data.chengpinDetails[0].content
     })
     .catch(error => {
-      console.log(error)
+      console.log(error);
     })
 
     
   }
 }
-
 </script>
