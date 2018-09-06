@@ -56,7 +56,7 @@ export default {
     };
   },
   created(){
-    this.$axios.get("http://www.wwtliu.com/sxtstu/blueberrypai/getChengpinDetails.php")
+    this.$axios.get("/sxtstu/blueberrypai/getChengpinDetails.php")
     .then(res => {
       console.log(res);
       this.mes = res.data.chengpinDetails[0].content
@@ -68,4 +68,4 @@ export default {
     
   }
 }
-</script>
+</script> 
