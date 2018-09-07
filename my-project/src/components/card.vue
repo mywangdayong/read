@@ -1,7 +1,7 @@
 <template>
-	<el-row>
+	<el-row :gutter="20">
 	 <!--  <el-col :span="4" v-for="(o, index) in 4" :key="o" :offset="index > 0 ? 2 : 0"> -->
-    <el-col v-for="movie in movies">
+    <el-col :span="4" v-for="movie in movies">
 	    <el-card :body-style="{ padding: '0px' }">
 	      <img :src="movie.img" class="image">
 	      <div style="padding: 14px;">
@@ -81,16 +81,16 @@ export default {
   },
   methods:{
     filterDate(data){
-      let finalMovies = [];
-      for (let i = 0; i<data.subjects.length;i++){
-        let moviesObj = {
+      var finalMovies = [];
+      for (var i = 0; i<data.subjects.length;i++){
+        var moviesObj = {
          title:data.subjects[i].title,
          img:data.subjects[i].images.large
-       }
+         }
+        finalMovies.push(moviesObj);
       }
-      finalMovies.push(moviesObj);
+      this.movies = finalMovies;
     }
-    this.movies = finalMovies;
   }
 }
 </script> 
