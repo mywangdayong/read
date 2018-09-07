@@ -11,8 +11,8 @@ import 	Axios from 'axios';
 
 
 Vue.prototype.$axios = Axios; 
-Axios.defaults.baseURL = "http://www.wwtliu.com"
-
+/*Axios.defaults.baseURL = "http://www.wwtliu.com"*/
+Vue.prototype.HOST = "/api";
 Vue.use(Vuex);
 Vue.use(ElementUI);
 Vue.use(Mint);

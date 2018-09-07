@@ -1,10 +1,11 @@
 <template>
 	<el-row>
-	  <el-col :span="4" v-for="(o, index) in 4" :key="o" :offset="index > 0 ? 2 : 0">
+	 <!--  <el-col :span="4" v-for="(o, index) in 4" :key="o" :offset="index > 0 ? 2 : 0"> -->
+    <el-col v-for="movie in movies">
 	    <el-card :body-style="{ padding: '0px' }">
-	      <img src="../assets/hamburger.png" class="image">
+	      <img :src="movie.img" class="image">
 	      <div style="padding: 14px;">
-	        <span>{{mes}}</span>
+	        <span>{{movie.title}}</span>
 	        <div class="bottom clearfix">
 	          <time class="time">{{ currentDate }}</time>
 	          <el-button type="text" class="button">查看详情</el-button>
@@ -52,20 +53,44 @@ export default {
   data() {
     return {
       currentDate: new Date(),
-      mes: 2
+      movies:[]
     };
   },
   created(){
-    this.$axios.get("/sxtstu/blueberrypai/getChengpinDetails.php")
+    /*this.$axios.get("/sxtstu/blueberrypai/getChengpinDetails.php")
     .then(res => {
       console.log(res);
       this.mes = res.data.chengpinDetails[0].content
     })
     .catch(error => {
       console.log(error);
+    })*/
+    let url = this.HOST + "/movie/top250";
+      this.$axios.get(url,{
+        params:{
+          count:10,
+          start:0
+        }
+      })
+    .then(res => {
+      this.filterDate(res.data);
     })
-
-    
+    .catch(error => {
+      console.log(error);
+    })    
+  },
+  methods:{
+    filterDate(data){
+      let finalMovies = [];
+      for (let i = 0; i<data.subjects.length;i++){
+        let moviesObj = {
+         title:data.subjects[i].title,
+         img:data.subjects[i].images.large
+       }
+      }
+      finalMovies.push(moviesObj);
+    }
+    this.movies = finalMovies;
   }
 }
 </script> 
