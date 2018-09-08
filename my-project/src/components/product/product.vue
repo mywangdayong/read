@@ -14,16 +14,9 @@ export default {
     components: {
         'product-list-one': ProductListOne,
         'product-list-two': ProductListTwo
-    },
-    state:{ 
-        products: [
-          {name: '鼠标', price: 20},
-          {name: '键盘', price: 40},
-          {name: '耳机', price: 60},
-          {name: '显示屏', price: 80}
-        ]
-      }
     }
+}
+
 </script>
 
 <style>
