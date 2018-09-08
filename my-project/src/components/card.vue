@@ -47,7 +47,6 @@
       clear: both
   }
 </style>
-
 <script>
 export default {
   data() {
