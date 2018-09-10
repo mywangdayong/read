@@ -9,7 +9,6 @@ import 'element-ui/lib/theme-chalk/index.css';
 import Vuex from 'vuex';
 import 	Axios from 'axios';
 
-
 Vue.prototype.$axios = Axios; 
 /*Axios.defaults.baseURL = "http://www.wwtliu.com"*/
 Vue.prototype.HOST = "/api";
@@ -49,7 +48,7 @@ const store = new Vuex.Store({
     minusPriceAsync( context, payload ) {
       setTimeout( () => {
         context.commit( 'minusPrice', payload ); //context提交
-      }, 2000)
+      }, 2000)	
     }
   }
 })
@@ -60,4 +59,5 @@ new Vue({
   store,
   components: { App },
   template: '<App/>'
-})
+}) 
+ 
