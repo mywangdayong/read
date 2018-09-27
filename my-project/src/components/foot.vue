@@ -7,7 +7,7 @@
 </template>
 <style type="text/css">
 	.foot{
-		padding: 10px 0;background: #d3dce6;margin-top: 20px;
+		padding: 10px 0;background: #d3dce6;margin-top: 20px;text-align: center;
 	}
 	.foot p{
 		line-height: 16px;

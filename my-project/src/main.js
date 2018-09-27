@@ -7,12 +7,14 @@ import Mint from 'mint-ui';
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 import 	Axios from 'axios';
+import 	VueResource from 'vue-resource';
 import store from './vuex/store';
 Vue.prototype.$axios = Axios; 
 /*Axios.defaults.baseURL = "http://www.wwtliu.com"*/
 Vue.prototype.HOST = "/api";
 Vue.use(ElementUI);
 Vue.use(Mint);
+Vue.use(VueResource);
 import 'mint-ui/lib/style.css'; 
 Vue.config.productionTip = false
 
