@@ -8,12 +8,12 @@
                     <div class="left">    
                         <ul>
                             <li>
-                               <router-link to="/user/useradd"> 增加用户</router-link>
+                               <router-link to="./user/useradd"> 增加用户</router-link>
                             </li>
 
 
                             <li>
-                                 <router-link to="/user/userlist"> 用户列表</router-link>
+                                 <router-link to="./user/userlist"> 用户列表</router-link>
                             </li>
                         </ul>
 
@@ -47,7 +47,7 @@
 
 </script>
 
-<style lang="scss" scoped>
+<style  scoped>
 
 
     .user{
@@ -62,10 +62,6 @@
 
             border-right:1px solid #eee;
 
-            li{
-
-                line-height:2;
-            }
         }
 
         .right{
@@ -73,3 +69,4 @@
         }
 
     }
+</style>

@@ -8,12 +8,12 @@
                     <div class="left">    
                         <ul>
                             <li>
-                               <router-link to="/user/useradd"> 增加用户</router-link>
+                               <router-link to="/user/UserAdd"> 增加用户</router-link>
                             </li>
 
 
                             <li>
-                                 <router-link to="/user/userlist"> 用户列表</router-link>
+                                 <router-link to="/user/UserList"> 用户列表</router-link>
                             </li>
                         </ul>
 
