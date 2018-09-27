@@ -1,42 +1,15 @@
 <template>
     <!-- 所有的内容要被根节点包含起来 -->
-    <div id="user">    
-      
-
-        <div class="user">    
-      
-                    <div class="left">    
-                        <ul>
-                            <li>
-                               <router-link to="/user/UserAdd"> 增加用户</router-link>
-                            </li>
-
-
-                            <li>
-                                 <router-link to="/user/UserList"> 用户列表</router-link>
-                            </li>
-                        </ul>
-
-
-                
-                    </div>
-
-                    <div class="right">    
-      
-                         <router-view></router-view>
-
-       
-                     </div>
-
-       
-         </div>
-       
+    <div>
+        <news></news>
     </div>
 </template>
 
 
 <script>
+    import news from "../user/news"
     export default{
+        components:{news},
         data(){
             return {               
                msg:'我是一个user组件'
@@ -47,29 +20,3 @@
 
 </script>
 
-<style lang="scss" scoped>
-
-
-    .user{
-
-        display:flex;
-
-        .left{
-
-            width:200px;
-
-            min-height:400px;
-
-            border-right:1px solid #eee;
-
-            li{
-
-                line-height:2;
-            }
-        }
-
-        .right{
-            flex:1;
-        }
-
-    }

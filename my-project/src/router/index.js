@@ -5,7 +5,9 @@ import menuOne from '@/components/menu/menuOne'
 import menuTwo from '@/components/menu/menuTwo'
 import menuThree from '@/components/menu/menuThree'
 import UserAdd from '@/components/user/UserAdd'
-import Userlist from '@/components/user/Userlist'
+import UserList from '@/components/user/UserList'
+import content from '@/components/user/content'
+import todolist from '@/components/todolist/todolist'
 Vue.use(Router)
 export default new Router({
   routes: [
@@ -21,21 +23,29 @@ export default new Router({
     },{
       path: '/menuTwo',
       name: 'menuTwo',
-      component: menuTwo,
-      children:[
-      { path: '/UserAdd',name: 'UserAdd', component: UserAdd },
-
-      { path: '/Userlist',name: 'Userlist', component: Userlist }
-
-    ]
+      component: menuTwo
     },{
       path: '/menuThree',
       name: 'menuThree',
-      component: menuThree
+      component: menuThree,
+      children:[
+      { path: 'UserAdd', name: 'UserAdd', component: UserAdd },
+      { path: 'Userlist', name: 'UserList', component: UserList}
+
+    ]
     },{
       path: '/HelloWorld',
       name: 'HelloWorld',
       component: HelloWorld
-    }
+    },{
+      path: '/content/:aid',
+      name: 'content',
+      component: content
+    },
+    ,{
+      path: '/todolist',
+      name: 'todolist',
+      component: todolist
+    },
   ]
 })

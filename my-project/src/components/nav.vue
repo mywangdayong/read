@@ -13,7 +13,7 @@
         <template slot="title">我的工作台</template>
         <el-menu-item index="2-1"><router-link to = "/menuOne">菜单一</router-link> </el-menu-item>
         <el-menu-item index="2-2"><router-link to = "/menuTwo">菜单二</router-link></el-menu-item>
-        <el-menu-item index="2-3"><router-link to = "/menuThree">菜单三</router-link></el-menu-item>
+        <el-menu-item index="2-3"><router-link to = "/menuThree/UserList">菜单三</router-link></el-menu-item>
         <el-submenu index="2-4">
           <template slot="title">选项4</template>
           <el-menu-item index="2-4-1">选项1</el-menu-item>
@@ -22,7 +22,7 @@
         </el-submenu>
       </el-submenu>
       <el-menu-item index="3" disabled>消息中心</el-menu-item>
-      <el-menu-item index="4"><a href="#" target="_blank">订单管理</a></el-menu-item>
+      <el-menu-item index="4"><router-link to = "/todolist" target="_blank">订单管理</router-link></el-menu-item>
     </el-menu>
   </div>
 

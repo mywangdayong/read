@@ -8,12 +8,12 @@
                     <div class="left">    
                         <ul>
                             <li>
-                               <router-link to="./user/useradd"> 增加用户</router-link>
+                               <router-link to="/menuThree/UserAdd"> 增加用户</router-link>
                             </li>
 
 
                             <li>
-                                 <router-link to="./user/userlist"> 用户列表</router-link>
+                                 <router-link to="/menuThree/UserList"> 用户列表</router-link>
                             </li>
                         </ul>
 
@@ -22,10 +22,8 @@
                     </div>
 
                     <div class="right">    
-      
-                         <router-view></router-view>
 
-       
+                         <router-view></router-view>     
                      </div>
 
        
@@ -47,12 +45,10 @@
 
 </script>
 
-<style  scoped>
+<style>
 
 
-    .user{
-
-        display:flex;
+    .user{display:flex;}
 
         .left{
 
@@ -68,5 +64,5 @@
             flex:1;
         }
 
-    }
+    
 </style>
