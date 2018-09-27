@@ -1,10 +1,13 @@
 <template>
   <div id="app">
+  	<navtab></navtab>
     <router-view/>
   </div>
 </template>
 <script>
+import navtab from './components/nav.vue'
 export default {
+  components:{navtab},
   name: 'App'
 }
 </script>

@@ -4,9 +4,7 @@ import HelloWorld from '@/components/HelloWorld'
 import menuOne from '@/components/menu/menuOne'
 import menuTwo from '@/components/menu/menuTwo'
 import menuThree from '@/components/menu/menuThree'
-
 Vue.use(Router)
-
 export default new Router({
   routes: [
     {
