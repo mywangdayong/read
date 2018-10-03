@@ -58,8 +58,21 @@ Math.max(a,b,c);//最大是
 Math.min(a,b,c);//最小值
 prototype
 
-from中的input可以设置为readonly和diable
+from中的input可以设置为readonly和disable
 
+alert
+confrim
+prompt
 
+scrollTop= document.documentElement.scrollTop||document.body.scrollTop
+(1)innerxxx(不兼容ie)
+window.innerHeight 可视区高度，包含滚动条
+window.innerWidth 可视区域宽度，包含滚动条
+(2)兼容ie document.documentElement.clientWidth 可视区宽度，不含滚动条
+节点的种类
+（1）元素节点：nodeType ===1;
+ (2)文本节点：nodeType ===3;
+ innerHTML和outerHTML
+ 
 
 

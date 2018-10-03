@@ -106,8 +106,6 @@ try{
 }finally{
 
 }
-alert
-confrim
-prompt
 
-scrollTop= document.documentElement.scrollTop||document.body.scrollTop
+
+  
