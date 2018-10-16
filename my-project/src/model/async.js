@@ -20,7 +20,8 @@ scrollWidth>offsetWidth>clientWidth
 scrollTop
 Object.call(this,obj1,obj2,obj3)
 Object.apply(this,arguments)
-JSON.parse
+JSON.parse()
+JSON.string()
 利用事件冒泡的原理，让袭击的所触发的事件，让他的父元素代替执行！
 阻止冒泡 ev.cancelBubble = true;非IE ev.stopPropagetion()
 阻止默认事件 return false;ev.preventDefault()
@@ -73,6 +74,5 @@ window.innerWidth 可视区域宽度，包含滚动条
 （1）元素节点：nodeType ===1;
  (2)文本节点：nodeType ===3;
  innerHTML和outerHTML
- 
-
+  
 
