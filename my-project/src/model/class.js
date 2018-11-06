@@ -1,4 +1,4 @@
-//类
+	//类
 function Person(name,age){
 	this.name = name;
 	this.age = age;
