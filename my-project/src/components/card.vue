@@ -8,6 +8,7 @@
 	        <span>{{movie.title}}</span>
 	        <div class="bottom clearfix">
 	          <time class="time">{{ currentDate }}</time>
+	          <el-button type="text" class="button">查看详情的</el-button>
 	          <el-button type="text" class="button">查看详情稍等</el-button>
 	        </div>
 	      </div>
