@@ -8,7 +8,7 @@
 	        <span>{{movie.title}}</span>
 	        <div class="bottom clearfix">
 	          <time class="time">{{ currentDate }}</time>
-	          <el-button type="text" class="button">查看详情</el-button>
+	          <el-button type="text" class="button">查看详情稍等</el-button>
 	        </div>
 	      </div>
 	    </el-card>
@@ -21,7 +21,7 @@
     font-size: 13px;
     color: #999;
   }
-  
+
   .bottom {
     margin-top: 13px;
     line-height: 12px;
@@ -42,7 +42,7 @@
       display: table;
       content: "";
   }
-  
+
   .clearfix:after {
       clear: both
   }
@@ -76,7 +76,7 @@ export default {
     })
     .catch(error => {
       console.log(error);
-    })    
+    })
   },
   methods:{
     filterDate(data){
@@ -92,4 +92,4 @@ export default {
     }
   }
 }
-</script> 
+</script>
